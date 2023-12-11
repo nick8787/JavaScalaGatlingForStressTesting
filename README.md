@@ -10,9 +10,11 @@
 - 4.Добавить несколько проверок (check).
 - 5.Сделать генерацию токенов при необходимости.
 - 6.Разбить всё на классы и методы.
+- 
 ### Making programming logic in our script:
+
 - 1.Создать csv файлы для сокращения метода (так как в Category).
-- 2.Создать UserSession, которая будет инициализировать логин (так как в Cart)
+- 2.Создать UserSession, которая будет инициализировать логин (так как в Cart).
 
 
 ## Steps:
@@ -33,6 +35,7 @@
 - site - https://acetoys.uk/
 - split into Page Object
 - making logic in script
+- simulation for stress testing (TestScenario, UserJourney)
 - assertions almost in every methods
 
 
