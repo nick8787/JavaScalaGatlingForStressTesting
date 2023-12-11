@@ -1,11 +1,11 @@
-<h1 align="center"> Test with Gatling + custom script </h1>
+<h1 align="center"> Gatling Test in Scala on Java + custom script </h1>
 
 
 ## Summary:
 
 ### To make our own "user journey" + create script, we need:
 - 1.Нажать на "Recorder" - запустить класс - откроется Gatling Recorder.
-- 2.Справа сверху выбрать "HAR" - добавить "user journey" записанный в DevTools - Network. Также задать название package и названию класса. Нажать старт.
+- 2.Справа сверху выбрать "HAR" - добавить "user journey" записанный в DevTools - Network (save all in HAR content). Также задать название package и названию класса. Нажать старт.
 - 3.Подредактировать новый класс (его сценарий), так как здесь в проекте.
 - 4.Добавить несколько проверок (check).
 - 5.Сделать генерацию токенов при необходимости.
@@ -35,7 +35,7 @@
 - site - https://acetoys.uk/
 - split into Page Object
 - making logic in script
-- simulation for stress testing (TestScenario, UserJourney)
+- simulation for stress testing (TestScenario, UserJourney, TestPopulation)
 - assertions almost in every methods
 
 
