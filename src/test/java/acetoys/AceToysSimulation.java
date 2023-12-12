@@ -22,8 +22,7 @@ public class AceToysSimulation extends Simulation {
 
   /*блок ниже проверяет значение переменной TEST_TYPE,
    если она - INSTANT_USERS - значит будет настроен именно этот сценарий (а она сейчас INSTANT_USERS)
-   тест будет выполнять тестовый сценарий INSTANT_USERS, которая определна в TestPopulation*/
-  {
+   тест будет выполнять тестовый сценарий INSTANT_USERS, которая определна в TestPopulation*/ {
     if (TEST_TYPE == "INSTANT_USERS") {
       setUp(TestPopulation.instantUsers).protocols(httpProtocol);
     } else if (TEST_TYPE == "RAMP_USERS") {
@@ -36,6 +35,7 @@ public class AceToysSimulation extends Simulation {
       setUp(TestPopulation.instantUsers).protocols(httpProtocol); //Если значение TEST_TYPE не соответствует ни одному из перечисленных случаев, то по умолчанию будет настроена TestPopulation - "instantUsers".
     }
   }
+}
 
   /*Другие разные варианты тестов ниже:*/
 //#1  {
@@ -54,4 +54,3 @@ public class AceToysSimulation extends Simulation {
 //	  setUp(scn.injectOpen(atOnceUsers(1)))
 //              .protocols(httpProtocol);
 //  }
-}
