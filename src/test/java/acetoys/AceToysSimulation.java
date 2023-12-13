@@ -22,7 +22,8 @@ public class AceToysSimulation extends Simulation {
 
   /*блок ниже проверяет значение переменной TEST_TYPE,
    если она - INSTANT_USERS - значит будет настроен именно этот сценарий (а она сейчас INSTANT_USERS)
-   тест будет выполнять тестовый сценарий INSTANT_USERS, которая определна в TestPopulation*/ {
+   тест будет выполнять тестовый сценарий INSTANT_USERS, которая определна в TestPopulation*/
+  {
     if (TEST_TYPE == "INSTANT_USERS") {
       setUp(TestPopulation.instantUsers).protocols(httpProtocol);
     } else if (TEST_TYPE == "RAMP_USERS") {
